@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cookies</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
-
 <body>
 
     <main class="main">
@@ -20,19 +18,18 @@
                 <nav class="menu">
                     <ul class="menu-list">
                         <li class="menu-item">
-                            <a href="#">Каталог</a>
+                            <a data-link="products">Каталог</a>
                         </li>
                         <li class="menu-item">
-                            <a href="#">О нас</a>
+                            <a data-link="love">О нас</a>
                         </li>
                         <li class="menu-item">
-                            <a href="#">Оформление заказа</a>
+                            <a data-link="order">Оформление заказа</a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </header>
-
         <section class="main-content">
             <div class="container">
                 <img src="images/line1.png" alt="Line" class="line1">
@@ -43,19 +40,17 @@
                         премиального печенья, стремясь подарить вам истинное кулинарное наслаждение.
                     </p>
                     <div class="main-action">
-                        <button class="button">Заказать</button>
+                        <button class="button" id="main-action-button">Заказать</button>
                     </div>
                 </div>
                 <img src="images/cookie.png" alt="Cookie" class="main-image">
             </div>
         </section>
-
-        <section class="products">
+        <section class="products" id="products">
             <div class="container">
                 <img src="images/line2.png" alt="Line" class="line2">
                 <div class="common-title">Выберите печенье</div>
                 <div class="products-items">
-
                     <div class="products-item">
                         <div class="products-item-image">
                             <img src="images/1.png" alt="Product">
@@ -75,7 +70,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="products-item">
                         <div class="products-item-image">
                             <img src="images/2.png" alt="Product">
@@ -96,8 +90,6 @@
                             </div>
                         </div>
                     </div>
-
-
                     <div class="products-item">
                         <div class="products-item-image">
                             <img src="images/3.png" alt="Product">
@@ -117,8 +109,6 @@
                             </div>
                         </div>
                     </div>
-
-
                     <div class="products-item">
                         <div class="products-item-image">
                             <img src="images/4.png" alt="Product">
@@ -138,8 +128,6 @@
                             </div>
                         </div>
                     </div>
-
-
                     <div class="products-item">
                         <div class="products-item-image">
                             <img src="images/5.png" alt="Product">
@@ -159,8 +147,6 @@
                             </div>
                         </div>
                     </div>
-
-
                     <div class="products-item">
                         <div class="products-item-image">
                             <img src="images/6.png" alt="Product">
@@ -308,7 +294,7 @@
             </div>
         </section>
 
-        <section class="love">
+        <section class="love" id="love">
             <div class="container">
                 <div class="common-title">Пекарня с любовью</div>
                 <div class="love-items">
@@ -328,7 +314,7 @@
             </div>
         </section>
 
-        <section class="order">
+        <section class="order" id="order">
             <img src="images/line3.png" alt="Line" class="line3">
             <div class="container">
                 <div class="common-title">Закажите печенье</div>
@@ -359,6 +345,7 @@
             <div class="rights">«Все права защищены»</div>
         </footer>
     </main>
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>
